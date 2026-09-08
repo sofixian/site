@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sofi Xian</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  /* soft early-2000s JP/KR minimalism */
+  :root{
+    --bg:#fbfaf8;
+    --paper:#fff;
+    --muted:#6b6560;
+    --accent:#caa6a0;
+    --max-width:600px;
+    --radius:0px;
+  }
+  
+  html,body{height:100%}
+  
+  body{
+    margin:0;
+    padding:40px 20px;
+    font-family: 'Trebuchet MS';
+    background:linear-gradient(180deg,var(--bg),#f7f5f3 60%);
+    color:#222;
+    -webkit-font-smoothing:none;
+  }
+
+  .wrap{
+    max-width:var(--max-width);
+    margin:0 auto;
+    background:var(--paper);
+    border-radius:var(--radius);
+    border:1px solid rgba(0,0,0,0.06);
+    padding:28px 32px;
+  }
+
+  .header{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+  
+  .avatar{
+    width: 128x;
+	  height: 128px;
+	  border-radius:0px;
+    background-image: url("./sofi.jpg");
+    background-size: cover;
+    background-position: center;
+    border:1px solid rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-weight: 700;
+    color:var(--muted);
+    flex:0 0 128px;
+    font-size:20px;
+  }
+
+  .title strong{display:block;font-size:20px}
+  
+  .subtitle{color:var(--muted);font-size:13px;margin-top:3px}
+
+  hr.soft{
+    border:0;height:1px;
+    background:linear-gradient(90deg,transparent,rgba(0,0,0,0.06),transparent);
+    margin:18px 0;max-width:480px;
+  }
+
+  h2.section{
+    margin:18px 0 6px;font-size:14px;
+    letter-spacing:0.06em;color:var(--accent);
+    text-transform:lowercase;font-weight:600;
+  }
+
+  p{margin:8px 0;color:#222;line-height:1.55}
+  .muted{color:var(--muted);font-size:13px}
+
+  .email{display:flex;align-items:center;gap:10px;margin-top:14px}
+  .email img{height:18px;display:inline-block;vertical-align:middle}
+
+  .footer-note{margin-top:18px;color:var(--muted);font-size:12px}
+
+  @media (max-width:520px){
+    .wrap{padding:20px}
+    .avatar{width:56px;height:56px}
+    .title strong{font-size:18px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="header">
+    <!-- <div class="avatar"></div> -->
+    <div class="title">
+      <strong>Sofi Xian (aka Sofia Lee)</strong>
+      <div class="subtitle">冼納然 — Amsterdam · consumer aesthetics researcher · photographer</div>
+    </div>
+  </header>
+
+  <hr class="soft" />
+
+  <section>
+    <h2 class="section">consumer aesthetics researcher</h2>
+    <p class="muted">Co-founder of the Consumer Aesthetics Research Institute. Work sits at the intersection of design, ritual, and everyday technology.</p>
+
+    <h2 class="section">photographer</h2>
+    <p class="muted">Practice focuses on quiet portraits and domestic landscapes — analogue and digital.</p>
+
+    <h2 class="section">sound artist</h2>
+    <p class="muted">Field recordings, minimal composition, and experimental listening spaces.</p>
+
+    <h2 class="section">computational linguist</h2>
+    <p class="muted">Research into language technology with attention to cultural context and aesthetics.</p>
+  </section>
+
+  <hr class="soft" />
+
+  <div class="email">
+    <span class="muted">email:</span>
+    <img src="./email.png" alt="email icon">
+  </div>
+
+  <div class="footer-note">site under construction.</div>
+</div>
+</body>
+</html>
